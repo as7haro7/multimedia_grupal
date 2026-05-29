@@ -1,7 +1,6 @@
 
----
 
-### 1. Diagrama Exhaustivo: Retiro y Adición de Materias
+### 1. Retiro y Adición de Materias
 
 Este modelo contempla los bloqueos institucionales, límites académicos y la concurrencia de datos.
 
@@ -44,9 +43,9 @@ Este modelo contempla los bloqueos institucionales, límites académicos y la co
 * **P8 (Transacción Segura):** El sistema bloquea el archivo JSON por milisegundos, descuenta el cupo exacto, inscribe al estudiante y libera el archivo.
 * **P9 (Resultado):** Generación de boleta actualizada. $\rightarrow$ **Fin**.
 
----
 
-### 2. Diagrama Exhaustivo: Postulación a Ayudantía de Docencia
+
+### 2. Postulación a Ayudantía de Docencia
 
 Este trámite incluye el manejo de fraudes, tiempos límite, cálculos de notas complejas y empates matemáticos.
 
@@ -84,6 +83,3 @@ Este trámite incluye el manejo de fraudes, tiempos límite, cálculos de notas 
 * **P9 (Aprobación Final):** El Consejo de Carrera revisa el acta final en el sistema y hace clic en "Homologar Resultados".
 * **P10 (Resultado):** El sistema genera la Resolución, actualiza la base de datos JSON de ayudantes activos y notifica por correo a los ganadores. $\rightarrow$ **Fin**.
 
----
-
-Con este nivel de detalle, los diagramas demuestran que tu propuesta de modernización no es solo un formulario básico, sino un verdadero motor de procesos (BPM) capaz de manejar la caótica realidad universitaria utilizando únicamente archivos de texto estructurado.
