@@ -1,0 +1,17 @@
+[
+    {
+        "usuario": "erick",
+        "password": "123",
+        "rol": "estudiante"
+    },
+    {
+        "usuario": "fer_deudas",
+        "password": "123",
+        "rol": "estudiante"
+    },
+    {
+        "usuario": "director",
+        "password": "123",
+        "rol": "director"
+    }
+]

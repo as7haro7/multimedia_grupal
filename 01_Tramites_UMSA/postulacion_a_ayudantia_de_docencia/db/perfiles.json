@@ -1,0 +1,19 @@
+[
+    {
+        "usuario": "juan",
+        "nombre": "Juan Perez",
+        "ayudantias_activas": 0,
+        "notas": {
+            "INF-111": 85,
+            "MAT-114": 52
+        }
+    },
+    {
+        "usuario": "pedro",
+        "nombre": "Pedro Lopez",
+        "ayudantias_activas": 2,
+        "notas": {
+            "INF-111": 40
+        }
+    }
+]

@@ -1,0 +1,20 @@
+[
+    {
+        "sigla": "INF-121",
+        "nombre": "Algoritmos y Programacion",
+        "cupos": 4,
+        "prerrequisito": "INF-111"
+    },
+    {
+        "sigla": "MAT-115",
+        "nombre": "Calculo II",
+        "cupos": 0,
+        "prerrequisito": "MAT-114"
+    },
+    {
+        "sigla": "LIN-116",
+        "nombre": "Gramatica",
+        "cupos": 30,
+        "prerrequisito": ""
+    }
+]

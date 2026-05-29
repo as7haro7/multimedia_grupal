@@ -1,0 +1,12 @@
+[
+    {
+        "sigla": "INF-111",
+        "nombre": "Introduccion a la Informatica",
+        "plazas": 1
+    },
+    {
+        "sigla": "MAT-114",
+        "nombre": "Calculo I",
+        "plazas": 2
+    }
+]

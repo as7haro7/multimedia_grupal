@@ -1,0 +1,7 @@
+[
+    {"usuario": "juan", "password": "123", "rol": "postulante"},
+    {"usuario": "pedro", "password": "123", "rol": "postulante"},
+    {"usuario": "ana", "password": "123", "rol": "kardex"},
+    {"usuario": "luis", "password": "123", "rol": "tribunal"},
+    {"usuario": "maria", "password": "123", "rol": "consejo"}
+]

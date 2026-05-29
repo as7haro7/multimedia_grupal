@@ -1,0 +1,16 @@
+[
+    {"flujo": "F2", "proceso": "P2", "opcion": "Si", "procesosiguiente": "P3"},
+    {"flujo": "F2", "proceso": "P2", "opcion": "No", "procesosiguiente": "Fin_Bloqueo"},
+    
+    {"flujo": "F2", "proceso": "P4", "opcion": "Aprobado", "procesosiguiente": "P5"},
+    {"flujo": "F2", "proceso": "P4", "opcion": "Rechazado", "procesosiguiente": "Fin_Rechazado"},
+    {"flujo": "F2", "proceso": "P4", "opcion": "Observado", "procesosiguiente": "P3"},
+    {"flujo": "F2", "proceso": "P4", "opcion": "Abandono", "procesosiguiente": "Fin_Abandono"},
+    
+    {"flujo": "F2", "proceso": "P6", "opcion": "Si", "procesosiguiente": "P7"},
+    {"flujo": "F2", "proceso": "P6", "opcion": "No", "procesosiguiente": "Fin_Reprobado"},
+    {"flujo": "F2", "proceso": "P6", "opcion": "NSP", "procesosiguiente": "Fin_NSP"},
+    
+    {"flujo": "F2", "proceso": "P8", "opcion": "Si", "procesosiguiente": "P9"},
+    {"flujo": "F2", "proceso": "P8", "opcion": "Empate", "procesosiguiente": "P_Desempate"}
+]

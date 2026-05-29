@@ -1,0 +1,26 @@
+[
+    {
+        "usuario": "erick",
+        "nombre": "Erick Perez",
+        "deudas_biblioteca": false,
+        "multas_electorales": false,
+        "estudiante_regular": true,
+        "materias_inscritas": [
+            "INF-111",
+            "INF-121"
+        ],
+        "materias_aprobadas": [
+            "INF-111",
+            "MAT-114"
+        ]
+    },
+    {
+        "usuario": "fer_deudas",
+        "nombre": "Fer Lopez",
+        "deudas_biblioteca": true,
+        "multas_electorales": false,
+        "estudiante_regular": true,
+        "materias_inscritas": [],
+        "materias_aprobadas": []
+    }
+]

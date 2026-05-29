@@ -1,0 +1,14 @@
+[
+    {"flujo": "F1", "proceso": "P1", "pantalla": "p1_inicio", "tipo": "P", "procesosiguiente": "P2"},
+    {"flujo": "F1", "proceso": "P2", "pantalla": "p2_val_estado", "tipo": "Q", "procesosiguiente": ""},
+    {"flujo": "F1", "proceso": "P3", "pantalla": "p3_val_cronograma", "tipo": "Q", "procesosiguiente": ""},
+    {"flujo": "F1", "proceso": "P4", "pantalla": "p4_interaccion", "tipo": "P", "procesosiguiente": "P5"},
+    {"flujo": "F1", "proceso": "P5", "pantalla": "p5_val_retiros", "tipo": "Q", "procesosiguiente": ""},
+    {"flujo": "F1", "proceso": "P6", "pantalla": "p6_val_academica", "tipo": "Q", "procesosiguiente": ""},
+    {"flujo": "F1", "proceso": "P7", "pantalla": "p7_val_cupos", "tipo": "Q", "procesosiguiente": ""},
+    {"flujo": "F1", "proceso": "P8", "pantalla": "p8_transaccion", "tipo": "P", "procesosiguiente": "P9"},
+    {"flujo": "F1", "proceso": "P9", "pantalla": "p9_resultado", "tipo": "F", "procesosiguiente": ""},
+    {"flujo": "F1", "proceso": "Fin_Bloqueo", "pantalla": "fin_bloqueo", "tipo": "F", "procesosiguiente": ""},
+    {"flujo": "F1", "proceso": "Fin_FueraFecha", "pantalla": "fin_fuerafecha", "tipo": "F", "procesosiguiente": ""},
+    {"flujo": "F1", "proceso": "Fin_Suspension", "pantalla": "fin_suspension", "tipo": "F", "procesosiguiente": ""}
+]

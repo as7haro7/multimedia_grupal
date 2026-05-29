@@ -1,0 +1,12 @@
+[
+    {"flujo": "F1", "proceso": "P2", "opcion": "Si", "procesosiguiente": "P3"},
+    {"flujo": "F1", "proceso": "P2", "opcion": "No", "procesosiguiente": "Fin_Bloqueo"},
+    {"flujo": "F1", "proceso": "P3", "opcion": "Si", "procesosiguiente": "P4"},
+    {"flujo": "F1", "proceso": "P3", "opcion": "No", "procesosiguiente": "Fin_FueraFecha"},
+    {"flujo": "F1", "proceso": "P5", "opcion": "Si", "procesosiguiente": "Fin_Suspension"},
+    {"flujo": "F1", "proceso": "P5", "opcion": "No", "procesosiguiente": "P6"},
+    {"flujo": "F1", "proceso": "P6", "opcion": "Si", "procesosiguiente": "P7"},
+    {"flujo": "F1", "proceso": "P6", "opcion": "No", "procesosiguiente": "P4"},
+    {"flujo": "F1", "proceso": "P7", "opcion": "Si", "procesosiguiente": "P8"},
+    {"flujo": "F1", "proceso": "P7", "opcion": "No", "procesosiguiente": "P4"}
+]
