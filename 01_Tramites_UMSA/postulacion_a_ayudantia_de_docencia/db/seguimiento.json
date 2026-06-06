@@ -1,3 +1,47 @@
 [
-    {"id": 1, "flujo": "F2", "proceso": "P4", "usuario": "juan", "fechaini": "2026-05-29", "fechafin": null, "datos": {"materia": "INF-111", "pdf": "historial.pdf"}}
+    {
+        "id": 1,
+        "flujo": "F2",
+        "proceso": "P4",
+        "usuario": "juan",
+        "fechaini": "2026-05-29",
+        "fechafin": null,
+        "datos": {
+            "materia": "INF-111",
+            "pdf": "historial.pdf"
+        }
+    },
+    {
+        "id": 2,
+        "flujo": "F2",
+        "proceso": "P4",
+        "usuario": "juan",
+        "fechaini": "2026-06-06",
+        "fechafin": null,
+        "datos": {
+            "materia": "INF-111",
+            "pdf": "historial_juan.pdf"
+        }
+    },
+    {
+        "id": 3,
+        "flujo": "F2",
+        "proceso": "P4",
+        "usuario": "juan",
+        "fechaini": "2026-06-06",
+        "fechafin": null,
+        "datos": {
+            "materia": "MAT-114",
+            "pdf": "historial_juan.pdf"
+        }
+    },
+    {
+        "id": 4,
+        "flujo": "F2",
+        "proceso": "P1",
+        "usuario": "juan",
+        "fechaini": "2026-06-06",
+        "fechafin": null,
+        "datos": []
+    }
 ]

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plataforma Web - Proyecto Multimedia</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- Background Animated Orbs -->
+    <div class="bg-orbs">
+        <div class="orb orb-1"></div>
+        <div class="orb orb-2"></div>
+    </div>
+
+    <header style="padding-top: 2rem; max-width: 800px; margin: 0 auto; padding-bottom: 2rem;">
+        <h3 style="font-weight: 400; font-size: 1.1rem; color: var(--text-primary); margin-bottom: 0.2rem;">Universidad
+            Mayor de San Andrés</h3>
+        <h4 style="font-weight: 400; font-size: 1rem; color: var(--text-secondary); margin-bottom: 0.2rem;">Facultad de
+            Ciencias Puras y Naturales</h4>
+        <h4 style="font-weight: 400; font-size: 1rem; color: var(--text-secondary); margin-bottom: 0.2rem;">Carrera de
+            Informática</h4>
+        <h4 style="font-weight: 400; font-size: 1rem; color: var(--text-secondary); margin-bottom: 1.5rem;">Multimedia
+        </h4>
+
+        <img src="Logo_Umsa.png" alt="Logo UMSA"
+            style="width: 180px; height: auto; margin-bottom: 1.5rem; display: block; margin-left: auto; margin-right: auto;">
+
+        <h1>Proyecto Multimedia Grupal</h1>
+        <p style="font-size: 1.1rem; color: var(--text-primary); margin-bottom: 2rem; font-weight: 600;">
+            Plataforma web integradora para la presentación de Entregables: Trámites Digitales (BPM), Animación en Unity
+            y Fotogrametría 3D.
+        </p>
+
+        <div
+            style="text-align: center; background: var(--card-bg); padding: 2rem; border-radius: 16px; border: 1px solid var(--card-border); margin-bottom: 2rem; box-shadow: 0 10px 25px rgba(0,0,0,0.05); backdrop-filter: blur(12px);">
+            <h3 style="font-size: 1.2rem; color: var(--text-primary); margin-bottom: 1rem;">Integrantes del Proyecto
+            </h3>
+            <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 1rem; margin-bottom: 1.5rem;">
+                <span
+                    style="background: rgba(99, 102, 241, 0.1); color: var(--accent); padding: 0.5rem 1rem; border-radius: 20px; font-weight: 600; border: 1px solid rgba(99, 102, 241, 0.2);">Poma
+                    Condori Erick Fernando</span>
+            </div>
+            <div
+                style="border-top: 1px solid var(--card-border); padding-top: 1rem; color: var(--text-secondary); font-size: 0.95rem;">
+                <p style="margin-bottom: 0.3rem;"><strong>Docente:</strong> Nombre....... </p>
+                <p>Junio de 2026</p>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <!-- Card 1: Tramites BPM -->
+        <a href="tramites.html" class="card">
+            <i class="fa-solid fa-code-branch card-icon"></i>
+            <h2>Trámites UMSA</h2>
+            <p>Digitalización de procesos universitarios mediante un motor de flujo de trabajo (Workflow) basado en
+                archivos JSON y PHP.</p>
+        </a>
+
+        <!-- Card 2: Unity WebGL -->
+        <a href="02_Desarrollo_3D_y_VR/Animacion_Unity/index.html" class="card">
+            <i class="fa-brands fa-unity card-icon"></i>
+            <h2>Animación 3D</h2>
+            <p>Escena coreográfica sincronizada con música desarrollada en Unity y exportada para el navegador web
+                mediante WebGL.</p>
+        </a>
+
+        <!-- Card 3: Fotogrametria -->
+        <a href="02_Desarrollo_3D_y_VR/Avatar_Fotogrametria/index.html" class="card">
+            <i class="fa-solid fa-vr-cardboard card-icon"></i>
+            <h2>Avatar Digital</h2>
+            <p>Modelo tridimensional realista generado a partir de múltiples fotografías (Fotogrametría) visualizado
+                interactivamente.</p>
+        </a>
+    </div>
+
+</body>
+
+</html>
