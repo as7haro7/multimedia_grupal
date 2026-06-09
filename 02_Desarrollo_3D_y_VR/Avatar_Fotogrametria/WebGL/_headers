@@ -1,0 +1,32 @@
+/Build/*.wasm.gz
+  Content-Type: application/wasm
+  Content-Encoding: gzip
+
+/Build/*.js.gz
+  Content-Type: application/javascript
+  Content-Encoding: gzip
+
+/Build/*.data.gz
+  Content-Type: application/octet-stream
+  Content-Encoding: gzip
+
+/Build/*.gz
+  Content-Encoding: gzip
+
+/Build/*.wasm.unityweb
+  Content-Type: application/wasm
+  Content-Encoding: gzip
+
+/Build/*.js.unityweb
+  Content-Type: application/javascript
+  Content-Encoding: gzip
+
+/Build/*.data.unityweb
+  Content-Type: application/octet-stream
+  Content-Encoding: gzip
+
+/Build/*.unityweb
+  Content-Encoding: gzip
+
+/Build/*.wasm
+  Content-Type: application/wasm
