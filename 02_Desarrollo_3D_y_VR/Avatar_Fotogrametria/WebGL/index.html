@@ -6,51 +6,39 @@
     <title>Unity Web Player | Avatar2D</title>
     <link rel="shortcut icon" href="TemplateData/favicon.ico">
     <link rel="stylesheet" href="TemplateData/style.css">
-    <!-- Enlace al CSS global del sistema principal -->
-    <link rel="stylesheet" href="https://as7haro7.github.io/multimedia_grupal/styles.css">
+    <link rel="manifest" href="manifest.webmanifest">
   </head>
   <body>
-    <!-- Fondo animado del sistema -->
-    <div class="bg-orbs">
-        <div class="orb orb-1"></div>
-        <div class="orb orb-2"></div>
-    </div>
-
-    <!-- Encabezado con el estilo del sistema -->
-    <header style="padding-top: 2rem; position: relative; z-index: 10;">
-        <a href="https://as7haro7.github.io/multimedia_grupal/" class="btn btn-secondary" style="position: absolute; top: 1rem; left: 1rem; margin-top: 0; padding: 0.5rem 1rem;">
-            ← Volver al Inicio
-        </a>
-        <h1 style="font-size: 2.5rem; margin-top: 1rem;">Avatar Digital</h1>
-        <p>Explora el modelo tridimensional interactivo.</p>
-    </header>
-
-    <!-- Contenedor principal de la tarjeta -->
-    <div class="content-page" style="width: 90%; max-width: 1000px; padding: 1rem; margin: 1rem auto 3rem auto; display: flex; flex-direction: column;">
-        <div class="webgl-container" style="margin: 0; border: none; padding: 0; position: relative; width: 100%; flex-grow: 1;">
-            <div id="unity-container" class="unity-desktop" style="width: 100%; height: 100%;">
-              <canvas id="unity-canvas" style="width: 100%; height: 100%; display: block;" tabindex="-1"></canvas>
-              <div id="unity-loading-bar">
-                <div id="unity-logo"></div>
-                <div id="unity-progress-bar-empty">
-                  <div id="unity-progress-bar-full"></div>
-                </div>
-              </div>
-              <div id="unity-warning"> </div>
-              <div id="unity-footer" style="display: none;">
-                <div id="unity-logo-title-footer"></div>
-                <div id="unity-fullscreen-button"></div>
-                <div id="unity-build-title">Avatar2D</div>
-              </div>
-            </div>
+    <div id="unity-container">
+      <canvas id="unity-canvas" width=960 height=600 tabindex="-1"></canvas>
+      <div id="unity-loading-bar">
+        <div id="unity-logo"></div>
+        <div id="unity-progress-bar-empty">
+          <div id="unity-progress-bar-full"></div>
         </div>
+      </div>
+      <div id="unity-warning"> </div>
     </div>
-
     <script>
-      var canvas = document.querySelector("#unity-canvas");
+      window.addEventListener("load", function () {
+        if ("serviceWorker" in navigator) {
+          navigator.serviceWorker.register("ServiceWorker.js");
+        }
+      });
 
+      var container = document.querySelector("#unity-container");
+      var canvas = document.querySelector("#unity-canvas");
+      var loadingBar = document.querySelector("#unity-loading-bar");
+      var progressBarFull = document.querySelector("#unity-progress-bar-full");
+      var warningBanner = document.querySelector("#unity-warning");
+
+      // Shows a temporary message banner/ribbon for a few seconds, or
+      // a permanent error message on top of the canvas if type=='error'.
+      // If type=='warning', a yellow highlight color is used.
+      // Modify or remove this function to customize the visually presented
+      // way that non-critical warnings and error messages are presented to the
+      // user.
       function unityShowBanner(msg, type) {
-        var warningBanner = document.querySelector("#unity-warning");
         function updateBannerVisibility() {
           warningBanner.style.display = warningBanner.children.length ? 'block' : 'none';
         }
@@ -80,37 +68,44 @@
         productName: "Avatar2D",
         productVersion: "0.1.0",
         showBanner: unityShowBanner,
+        // errorHandler: function(err, url, line) {
+        //    alert("error " + err + " occurred at line " + line);
+        //    // Return 'true' if you handled this error and don't want Unity
+        //    // to process it further, 'false' otherwise.
+        //    return true;
+        // },
       };
 
+      // By default Unity keeps WebGL canvas render target size matched with
+      // the DOM size of the canvas element (scaled by window.devicePixelRatio)
+      // Set this to false if you want to decouple this synchronization from
+      // happening inside the engine, and you would instead like to size up
+      // the canvas DOM size and WebGL render target sizes yourself.
+      // config.matchWebGLToCanvasSize = false;
+
       if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
+        // Mobile device style: fill the whole browser client area with the game canvas:
         var meta = document.createElement('meta');
         meta.name = 'viewport';
         meta.content = 'width=device-width, height=device-height, initial-scale=1.0, user-scalable=no, shrink-to-fit=yes';
         document.getElementsByTagName('head')[0].appendChild(meta);
-        document.querySelector("#unity-container").className = "unity-mobile";
-        canvas.className = "unity-mobile";
-      } else {
-        // En desktop también usamos 100% para ser responsivos dentro de la tarjeta
-        canvas.style.width = "100%";
-        canvas.style.height = "100%";
       }
 
-      document.querySelector("#unity-loading-bar").style.display = "block";
+
+      loadingBar.style.display = "block";
 
       var script = document.createElement("script");
       script.src = loaderUrl;
       script.onload = () => {
         createUnityInstance(canvas, config, (progress) => {
-          document.querySelector("#unity-progress-bar-full").style.width = 100 * progress + "%";
-              }).then((unityInstance) => {
-                document.querySelector("#unity-loading-bar").style.display = "none";
-              }).catch((message) => {
-                alert(message);
-              });
-            };
-
+          progressBarFull.style.width = 100 * progress + "%";
+        }).then((unityInstance) => {
+          loadingBar.style.display = "none";
+        }).catch((message) => {
+          alert(message);
+        });
+      };
       document.body.appendChild(script);
-
     </script>
   </body>
 </html>
