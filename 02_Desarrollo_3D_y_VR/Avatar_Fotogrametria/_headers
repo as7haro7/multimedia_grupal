@@ -1,6 +1,3 @@
-/WebGL/Build/*.gz
-  Content-Encoding: gzip
-
 /WebGL/Build/*.wasm.gz
   Content-Type: application/wasm
   Content-Encoding: gzip
@@ -11,6 +8,24 @@
 
 /WebGL/Build/*.data.gz
   Content-Type: application/octet-stream
+  Content-Encoding: gzip
+
+/WebGL/Build/*.gz
+  Content-Encoding: gzip
+
+/WebGL/Build/*.wasm.unityweb
+  Content-Type: application/wasm
+  Content-Encoding: gzip
+
+/WebGL/Build/*.js.unityweb
+  Content-Type: application/javascript
+  Content-Encoding: gzip
+
+/WebGL/Build/*.data.unityweb
+  Content-Type: application/octet-stream
+  Content-Encoding: gzip
+
+/WebGL/Build/*.unityweb
   Content-Encoding: gzip
 
 /WebGL/Build/*.wasm
