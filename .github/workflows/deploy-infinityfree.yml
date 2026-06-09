@@ -1,0 +1,31 @@
+name: Deploy to InfinityFree via FTP
+
+on:
+  push:
+    branches:
+      - main # O la rama que uses como principal
+
+jobs:
+  web-deploy:
+    name: Deploy to InfinityFree
+    runs-on: ubuntu-latest
+    steps:
+    
+    # 1. Traer el código de tu repositorio
+    - name: Get latest code
+      uses: actions/checkout@v4
+      
+    # 2. Sincronizar los archivos vía FTP a InfinityFree
+    - name: FTP-Deploy-Action
+      uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+      with:
+        server: ${{ secrets.FTP_SERVER }}
+        username: ${{ secrets.FTP_USERNAME }}
+        password: ${{ secrets.FTP_PASSWORD }}
+        # Excluir la base de datos JSON para no borrar los datos en vivo del servidor
+        # exclude: |
+        #   **/*.json
+        # Subir ÚNICAMENTE el contenido de la carpeta 01_Tramites_UMSA
+        local-dir: ./01_Tramites_UMSA/
+        # La carpeta pública en InfinityFree SIEMPRE es htdocs
+        server-dir: ./htdocs/

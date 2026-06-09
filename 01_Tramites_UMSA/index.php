@@ -61,7 +61,7 @@
     </div>
 
     <header>
-        <a href="index.html"
+        <a href="https://as7haro7.xo.je"
             style="color: var(--text-secondary); text-decoration: none; position: absolute; top: 2rem; left: 2rem; font-size: 1.2rem;">
             <i class="fa-solid fa-arrow-left"></i> Volver al Inicio
         </a>
@@ -84,8 +84,8 @@
 
             <div style="background: #ffffff; padding: 1rem; border-radius: 12px; margin-bottom: 1.5rem; text-align: center; box-shadow: 0 10px 25px rgba(0,0,0,0.1); cursor: pointer; transition: transform 0.3s;"
                 onmouseover="this.style.transform='scale(1.02)'" onmouseout="this.style.transform='scale(1)'"
-                onclick="openModal('01_Tramites_UMSA/retiro_y_adicion_de_materias/retiro_y_adicion_de_materias.png')">
-                <img src="01_Tramites_UMSA/retiro_y_adicion_de_materias/retiro_y_adicion_de_materias.png"
+                onclick="openModal('retiro_y_adicion_de_materias/retiro_y_adicion_de_materias.png')">
+                <img src="retiro_y_adicion_de_materias/retiro_y_adicion_de_materias.png"
                     alt="Diagrama de Retiro y Adición"
                     style="max-width: 100%; max-height: 400px; object-fit: contain; border-radius: 8px;">
                 <p style="font-size: 0.95rem; font-weight: 600; color: var(--accent); margin-top: 0.8rem;"><i
@@ -94,7 +94,7 @@
             </div>
 
             <div style="text-align: center;">
-                <a href="01_Tramites_UMSA/retiro_y_adicion_de_materias/iniciologin.php" class="btn">
+                <a href="retiro_y_adicion_de_materias/iniciologin.php" class="btn">
                     <i class="fa-solid fa-play"></i> Iniciar Workflow
                 </a>
             </div>
@@ -115,8 +115,8 @@
 
             <div style="background: #ffffff; padding: 1rem; border-radius: 12px; margin-bottom: 1.5rem; text-align: center; box-shadow: 0 10px 25px rgba(0,0,0,0.1); cursor: pointer; transition: transform 0.3s;"
                 onmouseover="this.style.transform='scale(1.02)'" onmouseout="this.style.transform='scale(1)'"
-                onclick="openModal('01_Tramites_UMSA/postulacion_a_ayudantia_de_docencia/postulacion_a_ayudantia_de_docencia.png')">
-                <img src="01_Tramites_UMSA/postulacion_a_ayudantia_de_docencia/postulacion_a_ayudantia_de_docencia.png"
+                onclick="openModal('postulacion_a_ayudantia_de_docencia/postulacion_a_ayudantia_de_docencia.png')">
+                <img src="postulacion_a_ayudantia_de_docencia/postulacion_a_ayudantia_de_docencia.png"
                     alt="Diagrama de Postulación a Ayudantía"
                     style="max-width: 100%; max-height: 400px; object-fit: contain; border-radius: 8px;">
                 <p style="font-size: 0.95rem; font-weight: 600; color: var(--accent); margin-top: 0.8rem;"><i
@@ -125,7 +125,7 @@
             </div>
 
             <div style="text-align: center;">
-                <a href="01_Tramites_UMSA/postulacion_a_ayudantia_de_docencia/iniciologin.php" class="btn">
+                <a href="postulacion_a_ayudantia_de_docencia/iniciologin.php" class="btn">
                     <i class="fa-solid fa-play"></i> Iniciar Workflow
                 </a>
             </div>
