@@ -1,35 +1,42 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
     <title>Avatar 3D - Fotogrametría</title>
-    <link rel="stylesheet" href="../../styles.css">
+    <!-- Tu archivo CSS copiado en Netlify -->
+    <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
-<body>
+
+<body style="text-align: center; margin: 0; padding: 0;">
+    <!-- Fondo animado -->
     <div class="bg-orbs">
         <div class="orb orb-1"></div>
         <div class="orb orb-2"></div>
     </div>
 
-    <header>
-        <a href="../../index.html" style="color: var(--text-secondary); text-decoration: none; position: absolute; top: 2rem; left: 2rem; font-size: 1.2rem;">
+    <!-- Encabezado con enlace a InfinityFree/GitHub -->
+    <header style="position: relative; z-index: 10;">
+        <a href="https://as7haro7.xo.je"
+            style="color: var(--text-secondary); text-decoration: none; position: absolute; top: 2rem; left: 2rem; font-size: 1.2rem;">
             <i class="fa-solid fa-arrow-left"></i> Volver al Inicio
         </a>
         <h1>Avatar Digital por Fotogrametría</h1>
-        <p>Modelo tridimensional realista exportado a la Web.</p>
+        <p>Explora el modelo tridimensional exportado en Unity WebGL.</p>
     </header>
 
-    <div class="content-page" style="text-align: center;">
-        <i class="fa-solid fa-vr-cardboard" style="font-size: 5rem; color: var(--text-secondary); margin-bottom: 1rem;"></i>
-        <h2 style="margin-bottom: 1rem;">Espacio reservado para el Visor 3D</h2>
-        <p style="color: var(--text-secondary); margin-bottom: 2rem;">
-            Cuando exportes tu modelo de fotogrametría interactivo (ya sea con un proyecto nuevo de Unity WebGL o usando librerías como Three.js), colócalo en esta carpeta (<code>02_Desarrollo_3D_y_VR/Avatar_Fotogrametria/</code>).
-        </p>
-        <p style="color: var(--accent);">
-            <strong>¡Asegúrate de que tu visor web reemplace a este archivo <code>index.html</code> para que la navegación principal siga funcionando!</strong>
-        </p>
+    <!-- Contenedor principal de la tarjeta -->
+    <div class="content-page"
+        style="width: 100%; display: block; padding: 1rem; max-width: 1000px; background: #ffffff; box-shadow: 0 10px 25px rgba(0,0,0,0.1); margin: 0 auto 3rem auto; border-radius: 16px;">
+
+        <div
+            style="width: 100%; height: 550px; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.2);">
+            <iframe src="https://avatar-fotogrametria-web.netlify.app/" width="100%" height="100%" frameborder="0"
+                scrolling="no"></iframe>
+        </div>
+
     </div>
 </body>
+
 </html>

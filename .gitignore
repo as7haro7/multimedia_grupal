@@ -1,0 +1,44 @@
+# Esta es la configuración oficial de Unity para Git.
+# Ignora todos los archivos temporales y generados automáticamente que no deben subirse.
+
+# Carpetas generadas por Unity
+[Ll]ibrary/
+[Tt]emp/
+[Oo]bj/
+[Bb]uild/
+[Bb]uilds/
+[Ll]ogs/
+[Uu]ser[Ss]ettings/
+
+# Archivos de caché y de memoria de Unity
+[Mm]emory[Cc]aptures/
+[Rr]ecordings/
+
+# Archivos de proyecto generados automáticamente
+*.csproj
+*.unityproj
+*.sln
+*.suo
+*.tmp
+*.user
+*.userprefs
+*.pidb
+*.booproj
+*.svd
+*.pdb
+*.mdb
+*.opendb
+*.VC.db
+
+# Ignorar archivos del sistema operativo
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+Desktop.ini
+
+# Crashlytics
+crashlytics-build.properties
