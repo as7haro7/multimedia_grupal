@@ -217,3 +217,56 @@ header p {
     margin: 2rem 0;
     overflow: hidden;
 }
+
+/* -------------------------------------
+   RESPONSIVIDAD (MÓVILES Y TABLETS)
+-------------------------------------- */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2.2rem;
+    }
+    
+    header p {
+        font-size: 1rem;
+        padding: 0 1rem;
+    }
+    
+    .container {
+        grid-template-columns: 1fr;
+        padding: 1.5rem;
+        gap: 1.5rem;
+    }
+    
+    header {
+        padding: 2rem 1rem 1rem;
+    }
+    
+    .card {
+        padding: 1.5rem;
+    }
+    
+    .card-icon {
+        font-size: 2.5rem;
+        margin-bottom: 1rem;
+    }
+    
+    .card h2 {
+        font-size: 1.4rem;
+    }
+    
+    /* Achicar un poco los orbes en móvil para mejor rendimiento y vista */
+    .orb-1 {
+        width: 200px;
+        height: 200px;
+    }
+    
+    .orb-2 {
+        width: 150px;
+        height: 150px;
+    }
+    
+    .content-page {
+        padding: 1.5rem;
+        margin: 1rem;
+    }
+}
