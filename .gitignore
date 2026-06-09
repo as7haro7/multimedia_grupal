@@ -42,3 +42,6 @@ Desktop.ini
 
 # Crashlytics
 crashlytics-build.properties
+
+# EXCEPCIÓN: Necesitamos subir la carpeta Build de WebGL a Github para que Netlify la lea
+!02_Desarrollo_3D_y_VR/Avatar_Fotogrametria/WebGL/Build/
