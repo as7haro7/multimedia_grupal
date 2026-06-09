@@ -61,7 +61,7 @@
     </div>
 
     <header>
-        <a href="https://as7haro7.xo.je"
+        <a href="https://as7haro7.github.io/multimedia_grupal/"
             style="color: var(--text-secondary); text-decoration: none; position: absolute; top: 2rem; left: 2rem; font-size: 1.2rem;">
             <i class="fa-solid fa-arrow-left"></i> Volver al Inicio
         </a>
