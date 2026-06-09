@@ -6,29 +6,30 @@
     <title>Unity Web Player | Avatar2D</title>
     <link rel="shortcut icon" href="TemplateData/favicon.ico">
     <link rel="stylesheet" href="TemplateData/style.css">
+    <!-- Enlace al CSS global del sistema principal -->
+    <link rel="stylesheet" href="https://as7haro7.github.io/multimedia_grupal/styles.css">
   </head>
-  <body style="margin: 0; padding: 0; background-color: #f3f4f6; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; display: flex; flex-direction: column; min-height: 100vh;">
+  <body>
+    <!-- Fondo animado del sistema -->
+    <div class="bg-orbs">
+        <div class="orb orb-1"></div>
+        <div class="orb orb-2"></div>
+    </div>
 
-    <!-- Encabezado -->
-    <header style="position: relative; z-index: 10;">
-        <a href="https://as7haro7.github.io/multimedia_grupal/"
-            style="color: #64748b; text-decoration: none; position: absolute; top: 2rem; left: 2rem; font-size: 1.2rem; font-weight: bold;">
+    <!-- Encabezado con el estilo del sistema -->
+    <header style="padding-top: 2rem; position: relative; z-index: 10;">
+        <a href="https://as7haro7.github.io/multimedia_grupal/" class="btn btn-secondary" style="position: absolute; top: 1rem; left: 1rem; margin-top: 0; padding: 0.5rem 1rem;">
             ← Volver al Inicio
         </a>
-        <div style="text-align: center; margin-top: 2rem;">
-            <h1 style="color: #2c3e50; margin-bottom: 0.5rem;">Avatar Digital por Fotogrametría</h1>
-            <p style="color: #64748b; font-size: 1.1rem;">Explora el modelo tridimensional exportado en Unity WebGL.</p>
-        </div>
+        <h1 style="font-size: 2.5rem; margin-top: 1rem;">Avatar Digital</h1>
+        <p>Explora el modelo tridimensional interactivo.</p>
     </header>
 
     <!-- Contenedor principal de la tarjeta -->
-    <div class="content-page"
-        style="width: 100%; display: block; padding: 1rem; max-width: 1000px; background: #ffffff; box-shadow: 0 10px 25px rgba(0,0,0,0.1); margin: 0 auto 3rem auto; border-radius: 16px;">
-        
-        <div style="position: relative; width: 100%; height: 600px; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.2); display: flex; justify-content: center; align-items: center; background: #231F20;">
-            
+    <div class="content-page" style="width: 90%; max-width: 1000px; padding: 1rem; margin: 1rem auto 3rem auto; display: flex; flex-direction: column;">
+        <div class="webgl-container" style="margin: 0; border: none; padding: 0; position: relative; width: 100%; flex-grow: 1;">
             <div id="unity-container" class="unity-desktop" style="width: 100%; height: 100%;">
-              <canvas id="unity-canvas" style="width: 100%; height: 100%;" tabindex="-1"></canvas>
+              <canvas id="unity-canvas" style="width: 100%; height: 100%; display: block;" tabindex="-1"></canvas>
               <div id="unity-loading-bar">
                 <div id="unity-logo"></div>
                 <div id="unity-progress-bar-empty">
@@ -42,7 +43,6 @@
                 <div id="unity-build-title">Avatar2D</div>
               </div>
             </div>
-
         </div>
     </div>
 
@@ -89,6 +89,10 @@
         document.getElementsByTagName('head')[0].appendChild(meta);
         document.querySelector("#unity-container").className = "unity-mobile";
         canvas.className = "unity-mobile";
+      } else {
+        // En desktop también usamos 100% para ser responsivos dentro de la tarjeta
+        canvas.style.width = "100%";
+        canvas.style.height = "100%";
       }
 
       document.querySelector("#unity-loading-bar").style.display = "block";
