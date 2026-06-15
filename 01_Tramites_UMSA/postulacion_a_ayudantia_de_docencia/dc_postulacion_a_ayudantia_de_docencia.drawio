@@ -1,6 +1,6 @@
 <mxfile host="65bd71144e">
     <diagram id="lgQ7u35yptwEaHEPcF7G" name="Page-1">
-        <mxGraphModel dx="890" dy="550" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="1500" math="0" shadow="0">
+        <mxGraphModel dx="890" dy="792" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="1500" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
@@ -146,7 +146,7 @@
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
                 <mxCell id="144" value="No" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="5" vertex="1">
-                    <mxGeometry x="30" y="1100" width="30" height="20" as="geometry"/>
+                    <mxGeometry x="55" y="1110" width="30" height="20" as="geometry"/>
                 </mxCell>
                 <mxCell id="145" value="Estado: 'Invitado / Suplente'" style="whiteSpace=wrap;html=1;rounded=0;shadow=0;glass=0;sketch=0;" parent="5" vertex="1">
                     <mxGeometry x="190" y="1140" width="60" height="70" as="geometry"/>
@@ -154,7 +154,7 @@
                 <mxCell id="e145" style="edgeStyle=none;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="5" source="143" target="145" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="150" value="Genera Resolución, actualiza JSON y Notifica" style="rounded=0;whiteSpace=wrap;html=1;shadow=0;glass=0;sketch=0;" parent="5" vertex="1">
+                <mxCell id="150" value="Resolución, Notifica" style="rounded=0;whiteSpace=wrap;html=1;shadow=0;glass=0;sketch=0;" parent="5" vertex="1">
                     <mxGeometry x="55" y="1290" width="160" height="60" as="geometry"/>
                 </mxCell>
                 <mxCell id="151" value="Fin" style="ellipse;whiteSpace=wrap;html=1;rounded=0;shadow=0;glass=0;sketch=0;" parent="5" vertex="1">
@@ -162,6 +162,12 @@
                 </mxCell>
                 <mxCell id="e151" style="edgeStyle=none;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="5" source="150" target="151" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="156" value="Sí" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="5">
+                    <mxGeometry x="84.38" y="1210" width="30" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="157" value="No" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="5">
+                    <mxGeometry x="155" y="1150" width="30" height="20" as="geometry"/>
                 </mxCell>
                 <mxCell id="6" value="Kárdex" style="swimlane;startSize=20;" parent="3" vertex="1">
                     <mxGeometry x="480" width="220" height="1400" as="geometry"/>
@@ -190,6 +196,12 @@
                 <mxCell id="e127" style="edgeStyle=none;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="6" source="118" target="127" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
+                <mxCell id="152" value="No" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="6">
+                    <mxGeometry x="10" y="590" width="30" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="153" value="Sí" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="6">
+                    <mxGeometry x="120" y="650" width="30" height="20" as="geometry"/>
+                </mxCell>
                 <mxCell id="7" value="Tribunal Evaluador" style="swimlane;startSize=20;" parent="3" vertex="1">
                     <mxGeometry x="700" width="220" height="1400" as="geometry"/>
                 </mxCell>
@@ -217,9 +229,6 @@
                 <mxCell id="146" value="Aplica regla de desempate (ej. promedio histórico)" style="rounded=0;whiteSpace=wrap;html=1;shadow=0;glass=0;sketch=0;" parent="7" vertex="1">
                     <mxGeometry x="30" y="1130" width="160" height="50" as="geometry"/>
                 </mxCell>
-                <mxCell id="147" value="Sí" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="7" vertex="1">
-                    <mxGeometry x="190" y="1140" width="30" height="20" as="geometry"/>
-                </mxCell>
                 <mxCell id="148" value="Decide Ganador" style="whiteSpace=wrap;html=1;rounded=0;shadow=0;glass=0;sketch=0;" parent="7" vertex="1">
                     <mxGeometry x="30" y="1210" width="160" height="40" as="geometry"/>
                 </mxCell>
@@ -237,6 +246,12 @@
                 </mxCell>
                 <mxCell id="119" value="Sí" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="7" vertex="1">
                     <mxGeometry y="500" width="30" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="154" value="Sí" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="7">
+                    <mxGeometry x="110" y="870" width="30" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="155" value="Sí" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="7">
+                    <mxGeometry y="900" width="30" height="20" as="geometry"/>
                 </mxCell>
                 <mxCell id="8" value="Consejo de Carrera" style="swimlane;startSize=20;" parent="3" vertex="1">
                     <mxGeometry x="920" width="180" height="1400" as="geometry"/>
